@@ -23,15 +23,14 @@ const DateSelector = ({setStartDate, setEndDate, startDate, endDate}) => {
 
   return (
     <Container>
-      
-      <Grid container spacing={2}>
+      <Grid container spacing={2} justifyContent="flex-end" style={{ marginTop: '0px' ,padding: '5px 0' }}>
         <Grid item xs={12} md={2} style={{ textAlign: 'right'}}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker 
             label="Start Date"
             value={startDate}
             onChange={handleStartDateChange}
-            renderInput={(params) => <input {...params.inputProps} />}
+            renderInput={(params) => <input {...params.inputProps} className="date-picker" />}
             
             />
           </LocalizationProvider>
@@ -44,7 +43,7 @@ const DateSelector = ({setStartDate, setEndDate, startDate, endDate}) => {
             label="End Date"
             value={endDate}
             onChange={handleEndDateChange}
-            renderInput={(params) => <input {...params.inputProps} />}
+            renderInput={(params) => <input {...params.inputProps} className="date-picker"/>}
             
           />
           </Box>

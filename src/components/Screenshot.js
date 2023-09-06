@@ -36,7 +36,7 @@ const MyWebpage = ({startDate, endDate}) => {
       <div ref={contentRef}>
       <button onClick={handleScreenshot} 
        style ={{ 
-        position: 'absolute', top: '2%', left: '96%',transform: 'translate(-50%, -50%)',}}
+        position: 'absolute', top: '7%', left: '93%',height:'7%',borderRadius:'5%',background:'aqua',transform: 'translate(-50%, -50%)',}}
         >
         Capture Screenshot</button>
       <MainPage cardData={data2} startDate={startDate} endDate={endDate}/> 
