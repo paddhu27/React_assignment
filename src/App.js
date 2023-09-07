@@ -17,7 +17,7 @@ function App() {
   
 
   return (
-    <div>
+    <div style={{ backgroundColor: "  #fbf7e9" }}>
       <DateComponent setStartDate={setStartDate} setEndDate={setEndDate} startDate={startDate} endDate={endDate} />
 
       <Screenshot startDate={formatDate(startDate)} endDate={formatDate(endDate)} />
